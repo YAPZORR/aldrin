@@ -22,38 +22,141 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <div id="body"> 
-  
-    <div id="chat-circle" class="btn btn-raised">
-            <div id="chat-overlay"></div>
-            <i class="material-icons">message</i>
-      </div>
-      
-      <div class="chat-box">
-        <div class="chat-box-header">
-          ChatBot
-          <span class="chat-box-toggle"><i class="material-icons">close</i></span>
-        </div>
-        <div class="chat-box-body">
-          <div class="chat-box-overlay">   
-          </div>
-          <div class="chat-logs">
-           
-          </div><!--chat-log -->
-        </div>
-        <div class="chat-input">      
-          <form>
-            <input type="text" id="chat-input" placeholder="Send a message..."/>
-          <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
-          </form>      
-        </div>
-      </div>
-      
-      
-      
-      
-    </div>
+
+<style>
+  * {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+#darkBack {
+  width: 100%;
+  height: 100vh;
+  background: rgba(76, 56, 75, .15);
+}
+
+#popUp {
+  position: fixed;
+  max-width: 350px;
+  height: 325px;
+  background: rgb(255, 255, 255);
+  border: 7px solid #fff;
+  bottom: 0;
+  margin-left: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#new span {
+  background: #fff;
+  position: absolute;
+  color: #1c8dc4;
+  padding: 4px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: -5px;
+}
+
+#popUp .close {
+  color: #464646;
+  right: 8px;
+  top: 0px;
+  position: absolute;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#popUp h2 {
+  font-size: 17px;
+  color: #464646;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+#body {
+  height: 1200px;
+  background: #eee;
+}
+
+a.button {
+  margin: 0 auto;
+  text-align: center;
+  right: 0;
+  left: 0;
+  position: absolute;
+  width: 120px;
+  font-size: 15px;
+  color: #fff;
+  border-bottom: 2px solid #18729f;
+  background: #1400c7;
+  border-radius: 4px;
+  padding: 8px 0;
+}
+
+#plus {
+  position: fixed;
+  color: #fff;
+  bottom: 15%;
+  font-size: 15px;
+  margin-left: -425px;
+  -webkit-transition: all 1.25s ease;
+  -moz-transition: all 1.25s ease;
+  -o-transition: all 1.25s ease;
+  transition: all 1.25s ease;
+  cursor: pointer;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+#plus span {
+  position: absolute;
+  margin-top: 38px;
+  left: 4px;
+}
+
+#plus::after {
+  content: '';
+  display: block;
+  display: relative;
+  border-top: 55px solid transparent;
+  border-bottom: 55px solid transparent;
+  border-left: 55px solid #7e2eff;
+}
+
+@media all and (max-width: 900px) {
+  #popUp {
+    margin-left: -425px;
+  }
+  #plus {
+    margin-left: 0px;
+  }
+}
+.primary_btnss{
+  margin-left: 4.5rem;
+}
+</style>
+
+
   <body onload="removeHtmlExtension()">
+
+
+    
+    
+
+
+
     <!--================ Start Header Area =================-->
     <header class="header_area">
       <div class="main_menu">
@@ -144,7 +247,12 @@
       </div>
     </header>
     <!--================ End Header Area =================-->
-
+   
+        
+        
+        
+        
+      </div>
     <!--================ Start Home Banner Area =================-->
     <section class="home_banner_area">
       <div class="banner_inner">
@@ -736,7 +844,7 @@
       </div>
     </section>
     <!--================ End Newsletter Area =================-->
-
+    
     <!--================Footer Area =================-->
     <footer class="footer_area">
       <div class="container">
@@ -774,6 +882,58 @@
       </div>
     </footer>
     <!--================End Footer Area =================-->
+
+
+
+
+
+    <!--================CHATBOX WIDGET=================-->
+    <div id="bodyy"> 
+  
+      <div id="chat-circle" class="btn btn-raised">
+              <div id="chat-overlay"></div>
+              <i class="material-icons">message</i>
+        </div>
+        
+        <div class="chat-box">
+          <div class="chat-box-header">
+            ChatBot
+            <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+          </div>
+          <div class="chat-box-body">
+            <div class="chat-box-overlay">   
+            </div>
+            <div class="chat-logs">
+             
+            </div><!--chat-log -->
+          </div>
+          <div class="chat-input">      
+            <form>
+              <input type="text" id="chat-input" placeholder="Send a message..."/>
+            <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+            </form>      
+          </div>
+        </div>
+
+    <!--================POP UP SECTION=================-->
+
+        <div id="popUp">
+          <div id="close" class="close"><i class="fa fa-times"></i></div>
+          <div id="new"><span>NEW!</span></div>
+          <h2>You are welcome to visit all of my new projects. Please feel free to explore.</h2>
+          <br>
+          <!-- <a href="#" target="_blank" class="button primary_btn">Visit Page</a> -->
+          <a class="primary_btn primary_btnss" href="https://www.figma.com/file/iG22BDyiSVtoSXCY95Odwm/Untitled?type=design&node-id=0-1&mode=design&t=VlfiKwQBwus84xOn-0"  target="_blank"><span>Visit Projects</span></a>
+        </div>
+        <div id="plus"><span>NEW<br>&nbsp;&nbsp;<i class="fa fa-plus"></i></span></div>
+
+
+
+
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -908,6 +1068,26 @@
   })
   
 })
+
+
+
+$(document).scroll(function() {
+  var scroll = $(this).scrollTop();
+  if (scroll >= 150) {
+    $("#popUp").css("margin-left", "-425px");
+    $("#plus").css("margin-left", "0px");
+  }
+});
+
+$("#plus").click(function() {
+  $("#popUp").css("margin-left", "0px");
+  $("#plus").css("margin-left", "-425px");
+});
+
+$("#close").click(function() {
+  $("#popUp").css("margin-left", "-425px");
+  $("#plus").css("margin-left", "0px");
+});
 	</script>
   </body>
 </html>
