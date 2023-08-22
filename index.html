@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/openai"></script>
   </head>
 
 <style>
@@ -146,6 +147,30 @@ a.button {
 .primary_btnss{
   margin-left: 4.5rem;
 }
+
+.cm-msg-button ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Vertical alignment */
+  }
+
+  .cm-msg-button li {
+    margin: 5px 0;
+  }
+
+  .cm-msg-button .chat-btn {
+    padding: 10px;
+    background-color: #5A5EB9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .cm-msg-button .chat-btn:hover {
+    background-color: #3f4396;
+  }
 </style>
 
 
@@ -391,7 +416,7 @@ a.button {
           <div class="offset-lg-2 col-lg-4 col-md-6">
             <div class="client-info">
               <div class="d-flex mb-50">
-                <span class="lage">2</span>
+                <span class="lage">3</span>
                 <span class="smll">Years Experience Working</span>
               </div>
               <div class="call-now d-flex">
@@ -888,32 +913,32 @@ a.button {
 
 
     <!--================CHATBOX WIDGET=================-->
-    <div id="bodyy"> 
-  
+    <div id="bodyy">
       <div id="chat-circle" class="btn btn-raised">
-              <div id="chat-overlay"></div>
-              <i class="material-icons">message</i>
+        <div id="chat-overlay"></div>
+        <i class="material-icons">message</i>
+      </div>
+    
+      <div class="chat-box">
+        <div class="chat-box-header">
+          ChatBot
+          <span class="chat-box-toggle"><i class="material-icons">close</i></span>
         </div>
-        
-        <div class="chat-box">
-          <div class="chat-box-header">
-            ChatBot
-            <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+        <div class="chat-box-body">
+          <div class="chat-box-overlay">
           </div>
-          <div class="chat-box-body">
-            <div class="chat-box-overlay">   
-            </div>
-            <div class="chat-logs">
-             
-            </div><!--chat-log -->
-          </div>
-          <div class="chat-input">      
-            <form>
-              <input type="text" id="chat-input" placeholder="Send a message..."/>
+          <div class="chat-logs">
+    
+          </div><!-- chat-log -->
+        </div>
+        <div class="chat-input">
+          <form>
+            <input type="text" id="chat-input" placeholder="Send a message..." />
             <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
-            </form>      
-          </div>
+          </form>
         </div>
+      </div>
+    </div>
 
     <!--================POP UP SECTION=================-->
 
@@ -967,108 +992,136 @@ a.button {
 
 
 
-      $(function() {
-  var INDEX = 0;
-  $("#chat-submit").click(function(e) {
-    e.preventDefault();
-    var msg = $("#chat-input").val(); 
-    if(msg.trim() == ''){
-      return false;
-    }
-    generate_message(msg, 'self');
+      $(function () {
+    var INDEX = 0;
     var buttons = [
-        {
-          name: 'Existing User',
-          value: 'existing'
-        },
-        {
-          name: 'New User',
-          value: 'new'
-        }
-      ];
-    setTimeout(function() {      
-      generate_message(msg, 'user');  
-    }, 1000)
-    
-  })
-  
-  function generate_message(msg, type) {
-    INDEX++;
-    var str = "";
-    str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg " + type + "\">";
-    str += "          <span class=\"msg-avatar\">";
-    str += "            <img src=\"https://cdn-icons-png.flaticon.com/512/7153/7153150.png\">";
-    str += "          <\/span>";
-    str += "          <div class=\"cm-msg-text\">";
-    str += msg;
-    str += "          <\/div>";
-    str += "        <\/div>";
-    $(".chat-logs").append(str);
-    $("#cm-msg-" + INDEX).hide().fadeIn(300);
-    if (type == 'self') {
-        $("#chat-input").val('');
-    }
-    $(".chat-logs").stop().animate({ scrollTop: $(".chat-logs")[0].scrollHeight }, 1000);
-}
-
- 
-  
-  function generate_button_message(msg, buttons){    
-    /* Buttons should be object array 
-      [
-        {
-          name: 'Existing User',
-          value: 'existing'
-        },
-        {
-          name: 'New User',
-          value: 'new'
-        }
-      ]
-    */
-    INDEX++;
-    var btn_obj = buttons.map(function(button) {
-       return  "              <li class=\"button\"><a href=\"javascript:;\" class=\"btn btn-primary chat-btn\" chat-value=\""+button.value+"\">"+button.name+"<\/a><\/li>";
-    }).join('');
-    var str="";
-    str += "<div id='cm-msg-"+INDEX+"' class=\"chat-msg user\">";
-    str += "          <span class=\"msg-avatar\">";
-    str += "            <img src=https://static.vecteezy.com/system/resources/thumbnails/007/225/199/small/robot-chat-bot-concept-illustration-vector.jpg>";
-    str += "          <\/span>";
-    str += "          <div class=\"cm-msg-text\">";
-    str += msg;
-    str += "          <\/div>";
-    str += "          <div class=\"cm-msg-button\">";
-    str += "            <ul>";   
-    str += btn_obj;
-    str += "            <\/ul>";
-    str += "          <\/div>";
-    str += "        <\/div>";
-    $(".chat-logs").append(str);
-    $("#cm-msg-"+INDEX).hide().fadeIn(300);   
-    $(".chat-logs").stop().animate({ scrollTop: $(".chat-logs")[0].scrollHeight}, 1000);
-    $("#chat-input").attr("disabled", true);
+  {
+    name: 'How can I contact aldrin?',
+    value: 'existing',
+    reply: 'You can contact aldrin through his email aldrineyana1@gmail.com or you can hire aldrin using his <a href="https://www.upwork.com/freelancers/aldrineyana" target="_blank"> upwork profile</a> and you can immediately contact him using this phone number: +63 09518189613'
+  },
+  {
+    name: 'What the rates of aldrin service?',
+    value: 'new',
+    reply: 'You can visit aldrin\'s <a href="https://www.upwork.com/services/product/design-designing-landing-pages-and-user-interface-design-using-figma-1691656948489129984?ref=fl_profile" target="_blank"> project catalog</a> to see his rates and you can also contact him through his email'
   }
-  
-  $(document).delegate(".chat-btn", "click", function() {
-    var value = $(this).attr("chat-value");
-    var name = $(this).html();
-    $("#chat-input").attr("disabled", false);
-    generate_message(name, 'self');
-  })
-  
-  $("#chat-circle").click(function() {    
-    $("#chat-circle").toggle('scale');
-    $(".chat-box").toggle('scale');
-  })
-  
-  $(".chat-box-toggle").click(function() {
-    $("#chat-circle").toggle('scale');
-    $(".chat-box").toggle('scale');
-  })
-  
-})
+];
 
+
+
+
+    // Add an introduction message
+    function introduction_message() {
+      INDEX++;
+      var str = "";
+      str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg bot\">";
+      str += "    <span class=\"msg-avatar\">";
+   
+      str += "    </span>";
+      str += "    <div class=\"cm-msg-text\">";
+      str += "        Hello, Welcome to Aldrin's website! How can I assist you today?";
+      str += "    </div>";
+      str += "</div>";
+      $(".chat-logs").append(str);
+      $("#cm-msg-" + INDEX).hide().fadeIn(300);
+      $(".chat-logs").stop().animate({
+        scrollTop: $(".chat-logs")[0].scrollHeight
+      }, 1000);
+    }
+
+    // Call the introduction message function when the chat box opens
+ 
+      introduction_message();
+   
+
+
+
+    $("#chat-submit").click(function (e) {
+      e.preventDefault();
+      var msg = $("#chat-input").val();
+      if (msg.trim() == '') {
+        return false;
+      }
+      generate_message(msg, 'self');
+      setTimeout(function () {
+        show_options();
+      }, 1000);
+    });
+
+    function generate_message(msg, type) {
+      INDEX++;
+      var str = "";
+      str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg " + type + "\">";
+      str += "          <span class=\"msg-avatar\">";
+      str += "          </span>";
+      str += "          <div class=\"cm-msg-text\">";
+      str += msg;
+      str += "          </div>";
+      str += "        </div>";
+      $(".chat-logs").append(str);
+      $("#cm-msg-" + INDEX).hide().fadeIn(300);
+      if (type == 'self') {
+        $("#chat-input").val('');
+      }
+      $(".chat-logs").stop().animate({
+        scrollTop: $(".chat-logs")[0].scrollHeight
+      }, 1000);
+    }
+
+    function show_options() {
+      var btn_obj = buttons.map(function (button) {
+        return "<li class=\"button\"><a href=\"javascript:;\" class=\"btn btn-primary chat-btn\" chat-value=\"" + button.value + "\">" + button.name + "</a></li>";
+      }).join('');
+      var str = "";
+      str += "<div id='cm-msg-" + (INDEX + 1) + "' class=\"chat-msg user\">";
+      str += "          <span class=\"msg-avatar\">";
+      str += "            <img src=https://static.vecteezy.com/system/resources/thumbnails/007/225/199/small/robot-chat-bot-concept-illustration-vector.jpg>";
+      str += "          </span>";
+      str += "          <div class=\"cm-msg-text\">";
+      str += "Hello, you can choose any of this option to know more about aldrin's service:";
+      str += "          </div>";
+      str += "          <div class=\"cm-msg-button\">";
+      str += "            <ul>";
+      str += btn_obj;
+      str += "            </ul>";
+      str += "          </div>";
+      str += "        </div>";
+      $(".chat-logs").append(str);
+      $("#cm-msg-" + (INDEX + 1)).hide().fadeIn(300);
+      $(".chat-logs").stop().animate({
+        scrollTop: $(".chat-logs")[0].scrollHeight
+      }, 1000);
+      $("#chat-input").attr("disabled", true);
+    }
+
+    $(document).delegate(".chat-btn", "click", function () {
+      var value = $(this).attr("chat-value");
+      var name = $(this).html();
+      $("#chat-input").attr("disabled", false);
+      generate_message(name, 'self');
+
+      // Find the corresponding option and generate the bot's reply
+      var selectedOption = buttons.find(function (button) {
+        return button.value === value;
+      });
+
+      if (selectedOption) {
+        setTimeout(function () {
+          generate_message(selectedOption.reply, 'user');
+        }, 1000);
+      }
+    });
+
+    $("#chat-circle").click(function () {
+      $("#chat-circle").toggle('scale');
+      $(".chat-box").toggle('scale');
+    });
+
+    $(".chat-box-toggle").click(function () {
+      $("#chat-circle").toggle('scale');
+      $(".chat-box").toggle('scale');
+    });
+  });
 
 
 $(document).scroll(function() {
