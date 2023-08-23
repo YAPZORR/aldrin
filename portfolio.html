@@ -17,7 +17,12 @@
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+	.video-btn{
+  background: #5A5EB9;
+}
 
+</style>
 <body onload="removeHtmlExtension()">
 
 	<!--================ Start Header Area =================-->
@@ -65,579 +70,729 @@
 	</header>
 	<!--================ End Header Area =================-->
 
-    <!--================ Start Banner Area =================-->
-    <section class="banner_area">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="container">
-                <div class="banner_content text-center">
-                    <h2>Portfolio</h2>
-                    <div class="page_link">
-                        <a href="index.html">Home</a>
-                        <a href="portfolio.html">Portfolio</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================ End Banner Area =================-->
+   <!--================Start Portfolio Area =================-->
+   <section class="portfolio_area" id="portfolio">
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-12">
+		  <div class="main_title text-left">
+			<h2>
+			  quality work <br />
+			  Recently done project
+			</h2>
+		  </div>
+		</div>
+	  </div>
+	  <div class="filters portfolio-filter">
+		<ul>
+		  <li class="active" data-filter="*">all</li>
+		  <!-- <li data-filter=".popular">popular</li> -->
+		  <li data-filter=".latest">latest</li>
+		  <li data-filter=".following">UI/UX Design</li>
+		  <li data-filter=".graphics">Graphics Design</li>
+		  <li data-filter=".webdesign">Static Website Design</li>
+		  <li data-filter=".video">Video Editing</li>
+		</ul>
+	  </div>
 
-	 <!--================Start Portfolio Area =================-->
-	 <section class="portfolio_area" id="portfolio">
-		<div class="container">
-		  <div class="row">
-			<div class="col-lg-12">
-			  <div class="main_title text-left">
-				<h2>
-				  quality work <br />
-				  Recently done project
-				</h2>
+	  <div class="filters-content">
+		<div class="row portfolio-grid justify-content-center">
+
+		 
+
+
+
+
+
+		  <div class="col-lg-4 col-md-6 all latest following">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/p1.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/p1.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Social Selling Website</a></h4>
+				<p>UI/UX Design | Figma</p>
 			  </div>
 			</div>
 		  </div>
-		  <div class="filters portfolio-filter">
-			<ul>
-			  <li class="active" data-filter="*">all</li>
-			  <!-- <li data-filter=".popular">popular</li> -->
-			  <li data-filter=".latest">latest</li>
-			  <li data-filter=".following">UI/UX Design</li>
-			  <li data-filter=".graphics">Graphics Design</li>
-			  <li data-filter=".webdesign">Static Website Design</li>
-			</ul>
-		  </div>
-  
-		  <div class="filters-content">
-			<div class="row portfolio-grid justify-content-center">
-			  <div class="col-lg-4 col-md-6 all latest following">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/p1.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/p1.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
+		  <div class="col-lg-4 col-md-6 all popular following">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/p2.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/p2.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
 				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Social Selling Website</a></h4>
-					<p>UI/UX Design | Figma</p>
-				  </div>
-				</div>
+				</a>
 			  </div>
-			  <div class="col-lg-4 col-md-6 all popular following">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/p2.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/p2.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Pet Care App</a></h4>
-					<p>UI/UX Design | Figma</p>
-				  </div>
-				</div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Pet Care App</a></h4>
+				<p>UI/UX Design | Figma</p>
 			  </div>
-			  <div class="col-lg-4 col-md-6 all latest following">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/p3.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/p3.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Energy Storage Website</a></h4>
-					<p>UI/UX Design | Figma</p>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-lg-4 col-md-6 all latest following">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/n1.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/n1.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">NFT Website</a></h4>
-					<p>UI/UX Design | Figma</p>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-lg-4 col-md-6 all latest following">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/u1.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/u1.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">UNISCORE</a></h4>
-					<p>UI/UX Design | Figma</p>
-				  </div>
-				</div>
-			  </div>
-			 
+			</div>
+
+
+
+
+
 			
-			  
-  
-  
-  
-  
-		   
-  
-			  <div class="col-lg-4 col-md-6 all graphics latest">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/m1.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/m1.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
+
+			
+		  </div>
+
+		  <div class="col-lg-4 col-md-6 all video">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img class="img-fluid w-100" src="img/portfolio/t1.png" alt="" />
+				<div class="overlay"></div>
+				<a href="img/portfolio/t1.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
 				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Logo Design</a></h4>
-					<p>Graphics Design | Adobe Photoshop</p>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="">Awareness Promotional Video</a></h4>
+				<p>Adobe Premiere | Wondershare Filmora 12 | </p>
+			  </div>
+			  <!-- Button trigger modal -->
+			  <button
+				type="button"
+				class="btn btn-primary video-btn"
+				data-toggle="modal"
+				data-src="https://drive.google.com/file/d/1Aq3MSoca3dmPwLcpHk1IRo-MYgqVMsD5/preview"
+				data-target="#myModal"
+			  >
+				Play Video
+			  </button>
+			</div>
+		  </div>
+		  <div
+			class="modal fade"
+			id="myModal"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		  >
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-body">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+				  <!-- 16:9 aspect ratio -->
+				  <div class="embed-responsive embed-responsive-16by9">
+					<iframe
+					  class="embed-responsive-item"
+					  src="https://drive.google.com/file/d/1Aq3MSoca3dmPwLcpHk1IRo-MYgqVMsD5/preview"
+					  allowfullscreen
+					  id="videoFrame"
+					></iframe>
 				  </div>
 				</div>
 			  </div>
-  
-			  <div class="col-lg-4 col-md-6 all graphics latest">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/u2.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/u2.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Logo Design</a></h4>
-					<p>Graphics Design | Adobe Photoshop</p>
-				  </div>
-				</div>
-			  </div>
-  
-  
-			  <div class="col-lg-4 col-md-6 all graphics latest">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/ps1.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/ps1.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Logo Design</a></h4>
-					<p>Graphics Design | Adobe Photoshop</p>
-				  </div>
-				</div>
-			  </div>
-  
-  
-  
-			  <div class="col-lg-4 col-md-6 all  webdesign">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/i1.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/i1.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="https://yapzorr.github.io/ilvpet/" target="_blank">Static Website Design</a></h4>
-					<p>HTML  | CSS | JavaScript</p>
-				  </div>
-				</div>
-			  </div>
+			</div>
+		  </div>
 
 
-				<div class="col-lg-4 col-md-6 all  webdesign">
-              <div class="portfolio_box">
-                <div class="single_portfolio">
-                  <img
-                    class="img-fluid w-100"
-                    src="img/portfolio/c1.png"
-                    alt=""
-                  />
-                  <div class="overlay"></div>
-                  <a href="img/portfolio/c1.png" class="img-gal">
-                    <div class="icon">
-                      <span class="lnr lnr-cross"></span>
-                    </div>
-                  </a>
-                </div>
-                <div class="short_info">
-                  <h4><a href="https://asscat-oas-web.000webhostapp.com/" target="_blank">Landing Page Design</a></h4>
-                  <p>HTML  | CSS | JavaScript</p>
-                </div>
-              </div>
-            </div>
-  
-  
-			  <div class="col-lg-4 col-md-6 all  webdesign">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/a1.png"
-					  alt=""
-					/>
+
+		  
+		  <div class="col-lg-4 col-md-6 all video">
+			<div class="portfolio_box">
+				<div class="single_portfolio">
+					<img class="img-fluid w-100" src="img/portfolio/video2.png" alt="" />
 					<div class="overlay"></div>
-					<a href="img/portfolio/a1.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
+					<a href="img/portfolio/video2.png" class="img-gal">
+						<div class="icon">
+							<span class="lnr lnr-cross"></span>
+						</div>
 					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="https://yapzorr.github.io/system/" target="_blank">Clone Website (ASSCAT Landing Page)</a></h4>
-					<p>HTML  | CSS | JavaScript</p>
-				  </div>
 				</div>
-			  </div>
-  
-  
-			 
-  
-  
-  
-			  <div class="col-lg-4 col-md-6 all popular following">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/p4.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/p4.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Food Delivery App</a></h4>
-					<p>UI/UX Design | Figma</p>
-				  </div>
+				<div class="short_info">
+					<h4><a href="">Award Winning Shortfilm</a></h4>
+					<p>Adobe Premiere | Wondershare Filmora 12 | After Effects</p>
+					<button
+						type="button"
+						class="btn btn-primary video-btn"
+						data-toggle="modal"
+						data-src="https://www.youtube.com/embed/4xJGGeaxE6Y"
+						data-target="#myModal1">
+					
+						Play Video
+					</button>
 				</div>
-			  </div>
-			  <div class="col-lg-4 col-md-6 all following">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/p6.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/p5.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Admin Dashboard</a></h4>
-					<p>UI/UX Design | Figma</p>
-				  </div>
+			</div>
+		</div>
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!-- Changed ID here -->
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<!-- 16:9 aspect ratio -->
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe
+								class="embed-responsive-item"
+								src=""
+								allowfullscreen
+								id="videoFrame1_1" <!-- Changed ID here -->
+							></iframe>
+						</div>
+					</div>
 				</div>
-			  </div>
-			  <div class="col-lg-4 col-md-6 all upcoming following">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/p5.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/p6.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Clone Web</a></h4>
-					<p>UI/UX Design | Figma</p>
-				  </div>
+			</div>
+		</div>
+
+
+
+		<div class="col-lg-4 col-md-6 all video">
+		  <div class="portfolio_box">
+			<div class="single_portfolio">
+			  <img class="img-fluid w-100" src="img/portfolio/video2.png" alt="" />
+			  <div class="overlay"></div>
+			  <a href="img/portfolio/video2.png" class="img-gal">
+				<div class="icon">
+				  <span class="lnr lnr-cross"></span>
 				</div>
-			  </div>
-  
-  
-			  <!-- <div class="col-lg-4 col-md-6 all upcoming graphics">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/p9.jpg"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/p9.jpg" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Design</a></h4>
-					<p>Design |  Photoshop</p>
-				  </div>
-				</div>
-			  </div> -->
-			  <div class="col-lg-4 col-md-6 all upcoming following">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/p7.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/p7.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Admin Dashboard</a></h4>
-					<p>UI/UX Design | Figma</p>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-lg-4 col-md-6 all following">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/p8.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/p8.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4>Parcel Delivery App</h4>
-					<p>UI/UX Design | Figma</p>
-				  </div>
-				</div>
-			  </div>
-  
-  
-  
-  
-			  <div class="col-lg-4 col-md-6 all  webdesign">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/port1.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/port1.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="https://yapzorr.github.io/aldrinE/" target="_blank">Second Personal Website</a></h4>
-					<p>HTML  | CSS | JavaScript</p>
-				  </div>
-				</div>
-			  </div>
-  
-  
-			  <div class="col-lg-4 col-md-6 all webdesign">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/port2.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/port2.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="https://yapzorr.github.io/aldrineyana/" target="_blank">Third Personal Website</a></h4>
-					<p>HTML  | CSS | JavaScript</p>
-				  </div>
-				</div>
-			  </div>
-		   
-			  
-			  <div class="col-lg-4 col-md-6 all graphics latest">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/r3.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/r3.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Logo Design</a></h4>
-					<p>Graphics Design | Adobe Photoshop</p>
-				  </div>
-				</div>
-			  </div>
-  
-			  <div class="col-lg-4 col-md-6 all graphics latest">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/r4.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/r4.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Logo Design</a></h4>
-					<p>Graphics Design | Adobe Photoshop</p>
-				  </div>
-				</div>
-			  </div>
-  
-			  <div class="col-lg-4 col-md-6 all graphics latest">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/r2.png"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/r2.png" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Social Media Post Design</a></h4>
-					<p>Graphics Design | Adobe Photoshop</p>
-				  </div>
-				</div>
-			  </div>
-  
-			  <div class="col-lg-4 col-md-6 all graphics latest ">
-				<div class="portfolio_box">
-				  <div class="single_portfolio">
-					<img
-					  class="img-fluid w-100"
-					  src="img/portfolio/r1.jpg"
-					  alt=""
-					/>
-					<div class="overlay"></div>
-					<a href="img/portfolio/r1.jpg" class="img-gal">
-					  <div class="icon">
-						<span class="lnr lnr-cross"></span>
-					  </div>
-					</a>
-				  </div>
-				  <div class="short_info">
-					<h4><a href="portfolio-details.html">Social Media Post Design</a></h4>
-					<p>Graphics Design | Adobe Photoshop</p>
-				  </div>
-				</div>
-			  </div>
-  
-  
-  
-  
-  
+			  </a>
+			</div>
+			<div class="short_info">
+			  <h4><a href="">Award Winning Shortfilm</a></h4>
+			  <p>Adobe Premiere | Wondershare Filmora 12 | After Effects</p>
+			  <button
+				type="button"
+				class="btn btn-primary video-btn"
+				data-toggle="modal"
+				data-src="https://www.youtube.com/embed/kbdXke6KgtU?autoplay=1&modestbranding=1&showinfo=0"
+				data-target="#myModalll"
+			  >
+				Play Video
+			  </button>
 			</div>
 		  </div>
 		</div>
-	  </section>
-	  <!--================End Portfolio Area =================-->
+		<div
+		  class="modal fade"
+		  id="myModalll"
+		  tabindex="-1"
+		  role="dialog"
+		  aria-labelledby="exampleModalLabel"
+		  aria-hidden="true"
+		>
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-body">
+				<button
+				  type="button"
+				  class="close"
+				  data-dismiss="modal"
+				  aria-label="Close"
+				>
+				  <span aria-hidden="true">&times;</span>
+				</button>
+				<!-- 16:9 aspect ratio -->
+				<div class="embed-responsive embed-responsive-16by9">
+				  <iframe
+					id="videoFrame1"
+					class="embed-responsive-item"
+					allowfullscreen
+				  ></iframe>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+
+	   
+		  
+
+
+
+		  <div class="col-lg-4 col-md-6 all latest following">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/p3.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/p3.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Energy Storage Website</a></h4>
+				<p>UI/UX Design | Figma</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 all latest following">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/n1.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/n1.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">NFT Website</a></h4>
+				<p>UI/UX Design | Figma</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 all latest following">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/u1.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/u1.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">UNISCORE</a></h4>
+				<p>UI/UX Design | Figma</p>
+			  </div>
+			</div>
+		  </div>
+		 
+		
+		  
+
+
+
+
+	   
+
+		  <div class="col-lg-4 col-md-6 all graphics latest">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/m1.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/m1.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Logo Design</a></h4>
+				<p>Graphics Design | Adobe Photoshop</p>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-4 col-md-6 all graphics latest">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/u2.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/u2.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Logo Design</a></h4>
+				<p>Graphics Design | Adobe Photoshop</p>
+			  </div>
+			</div>
+		  </div>
+
+
+		  <div class="col-lg-4 col-md-6 all graphics latest">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/ps1.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/ps1.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Logo Design</a></h4>
+				<p>Graphics Design | Adobe Photoshop</p>
+			  </div>
+			</div>
+		  </div>
+
+
+
+		  <div class="col-lg-4 col-md-6 all  webdesign">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/i1.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/i1.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="https://yapzorr.github.io/ilvpet/" target="_blank">Static Website Design</a></h4>
+				<p>HTML  | CSS | JavaScript</p>
+			  </div>
+			</div>
+		  </div>
+
+
+
+		  <div class="col-lg-4 col-md-6 all  webdesign">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/a1.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/a1.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="https://yapzorr.github.io/system/" target="_blank">Clone Website (ASSCAT Landing Page)</a></h4>
+				<p>HTML  | CSS | JavaScript</p>
+			  </div>
+			</div>
+		  </div>
+		  
+
+
+	 
+
+
+		  <div class="col-lg-4 col-md-6 all popular following">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/p4.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/p4.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Food Delivery App</a></h4>
+				<p>UI/UX Design | Figma</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 all following">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/p6.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/p5.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Admin Dashboard</a></h4>
+				<p>UI/UX Design | Figma</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 all upcoming following">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/p5.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/p6.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Clone Web</a></h4>
+				<p>UI/UX Design | Figma</p>
+			  </div>
+			</div>
+		  </div>
+
+
+		  <!-- <div class="col-lg-4 col-md-6 all upcoming graphics">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/p9.jpg"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/p9.jpg" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Design</a></h4>
+				<p>Design |  Photoshop</p>
+			  </div>
+			</div>
+		  </div> -->
+		  <div class="col-lg-4 col-md-6 all upcoming following">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/p7.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/p7.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Admin Dashboard</a></h4>
+				<p>UI/UX Design | Figma</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-lg-4 col-md-6 all following">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/p8.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/p8.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4>Parcel Delivery App</h4>
+				<p>UI/UX Design | Figma</p>
+			  </div>
+			</div>
+		  </div>
+
+
+
+
+		  <div class="col-lg-4 col-md-6 all  webdesign">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/port1.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/port1.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="https://yapzorr.github.io/aldrinE/" target="_blank">Second Personal Website</a></h4>
+				<p>HTML  | CSS | JavaScript</p>
+			  </div>
+			</div>
+		  </div>
+
+
+		  <div class="col-lg-4 col-md-6 all webdesign">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/port2.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/port2.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="https://yapzorr.github.io/aldrineyana/" target="_blank">Third Personal Website</a></h4>
+				<p>HTML  | CSS | JavaScript</p>
+			  </div>
+			</div>
+		  </div>
+	   
+		  
+		  <div class="col-lg-4 col-md-6 all graphics latest">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/r3.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/r3.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Logo Design</a></h4>
+				<p>Graphics Design | Adobe Photoshop</p>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-4 col-md-6 all graphics latest">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/r4.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/r4.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Logo Design</a></h4>
+				<p>Graphics Design | Adobe Photoshop</p>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-4 col-md-6 all graphics latest">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/r2.png"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/r2.png" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Social Media Post Design</a></h4>
+				<p>Graphics Design | Adobe Photoshop</p>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="col-lg-4 col-md-6 all graphics latest ">
+			<div class="portfolio_box">
+			  <div class="single_portfolio">
+				<img
+				  class="img-fluid w-100"
+				  src="img/portfolio/r1.jpg"
+				  alt=""
+				/>
+				<div class="overlay"></div>
+				<a href="img/portfolio/r1.jpg" class="img-gal">
+				  <div class="icon">
+					<span class="lnr lnr-cross"></span>
+				  </div>
+				</a>
+			  </div>
+			  <div class="short_info">
+				<h4><a href="portfolio-details.html">Social Media Post Design</a></h4>
+				<p>Graphics Design | Adobe Photoshop</p>
+			  </div>
+			</div>
+		  </div>
+
+
+
+
+
+		</div>
+	  </div>
+	</div>
+  </section>
+  <!--================End Portfolio Area =================-->
     
   <!--================ Start Newsletter Area =================-->
   <section class="newsletter_area">
@@ -755,6 +910,92 @@
           }
         }
       }
+
+
+
+
+	  $(document).ready(function() {
+
+// Gets the video src from the data-src on each button
+
+var $videoSrc;  
+$('.video-btn').click(function() {
+    $videoSrc = $(this).data( "src" );
+});
+console.log($videoSrc);
+
+  
+  
+// when the modal is opened autoplay it  
+$('#myModal').on('shown.bs.modal', function (e) {
+    
+// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+$("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+
+})
+  
+
+
+// stop playing the youtube video when I close the modal
+$('#myModal').on('hide.bs.modal', function (e) {
+    // a poor man's stop video
+    $("#video").attr('src',$videoSrc); 
+}) 
+    
+    
+
+
+  
+  
+// document ready  
+});
+
+ // Pause the video when the modal is closed
+ $('#myModal').on('hidden.bs.modal', function (e) {
+    var iframe = document.getElementById('videoFrame');
+    var videoSrc = iframe.src;
+    iframe.src = videoSrc; // Reset the source to pause the video
+  });
+
+
+
+
+  $(document).ready(function () {
+    // Gets the video src from the data-src on each button
+    var $videoSrc;
+    $('.video-btn').click(function () {
+        $videoSrc = $(this).data("src");
+    });
+
+    // when the modal is opened autoplay it
+    $('#myModal1').on('shown.bs.modal', function (e) {
+        // set the video src to autoplay and not to show related video
+        $("#videoFrame1_1").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+    });
+
+    // stop playing the youtube video when I close the modal
+    $('#myModal1').on('hide.bs.modal', function (e) {
+        // a poor man's stop video
+        $("#videoFrame1_1").attr('src', '');
+    });
+});
+
+
+
+
+$(document).ready(function () {
+    // Set the video source when the play button is clicked
+    $('.video-btn').click(function () {
+      var videoSrc = $(this).data("src");
+      $("#videoFrame1").attr("src", videoSrc);
+    });
+
+    // Stop the video when the modal is closed
+    $('#myModalll').on('hidden.bs.modal', function () {
+      $("#videoFrame1").attr("src", "");
+    });
+  });
+
 	</script>
 </body>
 
