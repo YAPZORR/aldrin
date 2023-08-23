@@ -7,9 +7,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
+
     <link rel="icon" href="img/favicon.png" type="image/png" />
     <title>Aldrin | Portfolio</title>
     <!-- Bootstrap CSS -->
+
+  
+    
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="vendors/linericon/style.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -21,10 +26,36 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
+    
     <script src="https://cdn.jsdelivr.net/npm/openai"></script>
+    
   </head>
 
 <style>
+  .modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+
+
+.modal{
+  margin-top: 15%;
+}
+.modal-body {
+  position:relative;
+  padding:0px;
+  
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
 
 
 @media (max-width: 768px) {
@@ -120,6 +151,9 @@ a.button {
   border-radius: 4px;
   padding: 8px 0;
 }
+.video-btn{
+  background: #5A5EB9;
+}
 
 #plus {
   position: fixed;
@@ -186,6 +220,30 @@ a.button {
   .cm-msg-button .chat-btn:hover {
     background-color: #3f4396;
   }
+
+
+
+   /* Styles for the overlay container */
+   .overlay-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+        }
+        
+        /* Styles for the video element within the overlay */
+        .overlay-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%;
+            max-height: 90%;
+        }
 </style>
 
 
@@ -478,11 +536,19 @@ a.button {
             <li data-filter=".following">UI/UX Design</li>
             <li data-filter=".graphics">Graphics Design</li>
             <li data-filter=".webdesign">Static Website Design</li>
+            <li data-filter=".video">Video Editing</li>
           </ul>
         </div>
 
         <div class="filters-content">
           <div class="row portfolio-grid justify-content-center">
+
+           
+
+
+
+
+
             <div class="col-lg-4 col-md-6 all latest following">
               <div class="portfolio_box">
                 <div class="single_portfolio">
@@ -524,7 +590,187 @@ a.button {
                   <p>UI/UX Design | Figma</p>
                 </div>
               </div>
+
+
+
+
+
+              
+
+              
             </div>
+
+            <div class="col-lg-4 col-md-6 all video">
+              <div class="portfolio_box">
+                <div class="single_portfolio">
+                  <img class="img-fluid w-100" src="img/portfolio/t1.png" alt="" />
+                  <div class="overlay"></div>
+                  <a href="img/portfolio/t1.png" class="img-gal">
+                    <div class="icon">
+                      <span class="lnr lnr-cross"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="short_info">
+                  <h4><a href="">Awareness Promotional Video</a></h4>
+                  <p>Adobe Premiere | Wondershare Filmora 12 | </p>
+                </div>
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary video-btn"
+                  data-toggle="modal"
+                  data-src="https://drive.google.com/file/d/1Aq3MSoca3dmPwLcpHk1IRo-MYgqVMsD5/preview"
+                  data-target="#myModal"
+                >
+                  Play Video
+                </button>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="myModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        class="embed-responsive-item"
+                        src="https://drive.google.com/file/d/1Aq3MSoca3dmPwLcpHk1IRo-MYgqVMsD5/preview"
+                        allowfullscreen
+                        id="videoFrame"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            
+            <div class="col-lg-4 col-md-6 all video">
+              <div class="portfolio_box">
+                  <div class="single_portfolio">
+                      <img class="img-fluid w-100" src="img/portfolio/video2.png" alt="" />
+                      <div class="overlay"></div>
+                      <a href="img/portfolio/video2.png" class="img-gal">
+                          <div class="icon">
+                              <span class="lnr lnr-cross"></span>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="short_info">
+                      <h4><a href="">Award Winning Shortfilm</a></h4>
+                      <p>Adobe Premiere | Wondershare Filmora 12 | After Effects</p>
+                      <button
+                          type="button"
+                          class="btn btn-primary video-btn"
+                          data-toggle="modal"
+                          data-src="https://www.youtube.com/embed/4xJGGeaxE6Y"
+                          data-target="#myModal1">
+                      
+                          Play Video
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!-- Changed ID here -->
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-body">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                          <!-- 16:9 aspect ratio -->
+                          <div class="embed-responsive embed-responsive-16by9">
+                              <iframe
+                                  class="embed-responsive-item"
+                                  src=""
+                                  allowfullscreen
+                                  id="videoFrame1_1" <!-- Changed ID here -->
+                              ></iframe>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+          <div class="col-lg-4 col-md-6 all video">
+            <div class="portfolio_box">
+              <div class="single_portfolio">
+                <img class="img-fluid w-100" src="img/portfolio/video2.png" alt="" />
+                <div class="overlay"></div>
+                <a href="img/portfolio/video2.png" class="img-gal">
+                  <div class="icon">
+                    <span class="lnr lnr-cross"></span>
+                  </div>
+                </a>
+              </div>
+              <div class="short_info">
+                <h4><a href="">Award Winning Shortfilm</a></h4>
+                <p>Adobe Premiere | Wondershare Filmora 12 | After Effects</p>
+                <button
+                  type="button"
+                  class="btn btn-primary video-btn"
+                  data-toggle="modal"
+                  data-src="https://www.youtube.com/embed/kbdXke6KgtU?autoplay=1&modestbranding=1&showinfo=0"
+                  data-target="#myModalll"
+                >
+                  Play Video
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="modal fade"
+            id="myModalll"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <!-- 16:9 aspect ratio -->
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                      id="videoFrame1"
+                      class="embed-responsive-item"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+         
+            
+
+
+
             <div class="col-lg-4 col-md-6 all latest following">
               <div class="portfolio_box">
                 <div class="single_portfolio">
@@ -689,28 +935,6 @@ a.button {
             </div>
 
 
-            <div class="col-lg-4 col-md-6 all  webdesign">
-              <div class="portfolio_box">
-                <div class="single_portfolio">
-                  <img
-                    class="img-fluid w-100"
-                    src="img/portfolio/c1.png"
-                    alt=""
-                  />
-                  <div class="overlay"></div>
-                  <a href="img/portfolio/c1.png" class="img-gal">
-                    <div class="icon">
-                      <span class="lnr lnr-cross"></span>
-                    </div>
-                  </a>
-                </div>
-                <div class="short_info">
-                  <h4><a href="https://asscat-oas-web.000webhostapp.com/" target="_blank">Landing Page Design</a></h4>
-                  <p>HTML  | CSS | JavaScript</p>
-                </div>
-              </div>
-            </div>
-
 
             <div class="col-lg-4 col-md-6 all  webdesign">
               <div class="portfolio_box">
@@ -733,10 +957,10 @@ a.button {
                 </div>
               </div>
             </div>
+            
 
 
-           
-
+       
 
 
             <div class="col-lg-4 col-md-6 all popular following">
@@ -1451,6 +1675,93 @@ $("#close").click(function() {
   $("#popUp").css("margin-left", "-425px");
   $("#plus").css("margin-left", "0px");
 });
+
+
+
+
+$(document).ready(function() {
+
+// Gets the video src from the data-src on each button
+
+var $videoSrc;  
+$('.video-btn').click(function() {
+    $videoSrc = $(this).data( "src" );
+});
+console.log($videoSrc);
+
+  
+  
+// when the modal is opened autoplay it  
+$('#myModal').on('shown.bs.modal', function (e) {
+    
+// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+$("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+
+})
+  
+
+
+// stop playing the youtube video when I close the modal
+$('#myModal').on('hide.bs.modal', function (e) {
+    // a poor man's stop video
+    $("#video").attr('src',$videoSrc); 
+}) 
+    
+    
+
+
+  
+  
+// document ready  
+});
+
+ // Pause the video when the modal is closed
+ $('#myModal').on('hidden.bs.modal', function (e) {
+    var iframe = document.getElementById('videoFrame');
+    var videoSrc = iframe.src;
+    iframe.src = videoSrc; // Reset the source to pause the video
+  });
+
+
+
+
+  $(document).ready(function () {
+    // Gets the video src from the data-src on each button
+    var $videoSrc;
+    $('.video-btn').click(function () {
+        $videoSrc = $(this).data("src");
+    });
+
+    // when the modal is opened autoplay it
+    $('#myModal1').on('shown.bs.modal', function (e) {
+        // set the video src to autoplay and not to show related video
+        $("#videoFrame1_1").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+    });
+
+    // stop playing the youtube video when I close the modal
+    $('#myModal1').on('hide.bs.modal', function (e) {
+        // a poor man's stop video
+        $("#videoFrame1_1").attr('src', '');
+    });
+});
+
+
+
+
+$(document).ready(function () {
+    // Set the video source when the play button is clicked
+    $('.video-btn').click(function () {
+      var videoSrc = $(this).data("src");
+      $("#videoFrame1").attr("src", videoSrc);
+    });
+
+    // Stop the video when the modal is closed
+    $('#myModalll').on('hidden.bs.modal', function () {
+      $("#videoFrame1").attr("src", "");
+    });
+  });
+
+
 	</script>
   </body>
 </html>
