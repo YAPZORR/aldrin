@@ -13,7 +13,7 @@
     <title>Aldrin | Portfolio</title>
     <!-- Bootstrap CSS -->
 
-  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.20.0/font/bootstrap-icons.css">
     
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="vendors/linericon/style.css" />
@@ -355,9 +355,9 @@ a.button {
                 </li>
 
 
-                <li class="nav-item">
-                  <p><i class="bi bi-eye"></i> Website Views: <span id="visitorCount">👁️ 0</span></p>
-              </li>
+              <li class="nav-item">
+            <p><i class="bi bi-eye"></i> <span id="visitorCount"> 0</span></p>
+        </li>
               
               
               
@@ -1794,50 +1794,17 @@ $(document).ready(function () {
 
 
 
-   // Function to fetch the user's IP address using the ipify service
-   async function getIP() {
-            try {
-                const response = await fetch('https://api64.ipify.org?format=json');
-                const data = await response.json();
-                return data.ip;
-            } catch (error) {
-                console.error('Error fetching IP:', error);
-                return null;
-            }
+   // Function to generate a random number between min and max (inclusive)
+   function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
         }
 
-        // Function to increment and update the visitor count
-        async function incrementVisitorCount() {
-            const userIP = await getIP();
+        // Get a random number between 100 and 800
+        const randomNumber = getRandomNumber(100, 800);
 
-            if (userIP) {
-                // Check if the user's IP has already visited
-                if (!localStorage.getItem(userIP)) {
-                    // If not, initialize it to 1 and mark as visited
-                    localStorage.setItem(userIP, 1);
-
-                    // Increment the total visitor count
-                    if (!localStorage.getItem("visitorCount")) {
-                        localStorage.setItem("visitorCount", 1);
-                    } else {
-                        let count = parseInt(localStorage.getItem("visitorCount")) + 1;
-                        localStorage.setItem("visitorCount", count);
-                    }
-                } else {
-                    // If it exists, don't increment the total count again
-                    localStorage.setItem(userIP, parseInt(localStorage.getItem(userIP)) + 1);
-                }
-
-                // Display the visitor count on the page
-                document.getElementById("visitorCount").textContent = "👁️ " + localStorage.getItem("visitorCount");
-            }
-        }
-
-        // Call the incrementVisitorCount function to update the count on page load
-        incrementVisitorCount();
-
-        // Simulate a real-time update (e.g., every 10 seconds)
-        setInterval(incrementVisitorCount, 10000); // 10 seconds
+        // Display the random number in the span element
+        const visitorCountSpan = document.getElementById("visitorCount");
+        visitorCountSpan.textContent = `👁️ ${randomNumber}`;
 	</script>
   </body>
 </html>
