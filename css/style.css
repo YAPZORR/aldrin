@@ -3319,10 +3319,7 @@ h6 {
     .footer_area .footer_bottom a {
       color: #854fee; }
 
-      html, body {
-        background: #fffff;      
-        height:100%;  
-      }
+     
       #center-text {          
         display: flex;
         flex: 1;
