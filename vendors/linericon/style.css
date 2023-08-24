@@ -361,7 +361,8 @@
 	content: "\e86f";
 }
 .lnr-cross:before {
-	content: "\e870";
+    content: "👁";
+    transform: scaleX(-1);
 }
 .lnr-menu:before {
 	content: "\e871";
@@ -408,8 +409,9 @@
 .lnr-checkmark-circle:before {
 	content: "\e87f";
 }
-.lnr-cross-circle:before {
-	content: "\e880";
+.lnr-cross:before {
+    content: "👁";
+    transform: scaleX(-2);
 }
 .lnr-plus-circle:before {
 	content: "\e881";
