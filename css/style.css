@@ -2912,7 +2912,7 @@ h6 {
 
   /* End Home Banner Area css
   ============================================================================================ */
-  .header_area .navbar {
+  .header_area .navbar .primary_btn {
     margin-left: 40px; }
 
   .home_banner_area .banner_inner .banner_content h2 br {
@@ -3082,7 +3082,7 @@ h6 {
   .home_banner_area .banner_inner .home_left_img {
     display: none; }
 
-  .header_area .navbar {
+  .header_area .navbar .primary_btn {
     display: none; }
 
   .left_side_text {
@@ -3105,7 +3105,7 @@ h6 {
 
   .home_banner_area .banner_inner .banner_content {
     margin-top: 0px; }
-    .home_banner_area .banner_inner .banner_content  {
+    .home_banner_area .banner_inner .banner_content .primary_btn {
       display: none; }
 
   /* Blog Page Area css
