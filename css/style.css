@@ -2912,7 +2912,7 @@ h6 {
 
   /* End Home Banner Area css
   ============================================================================================ */
-  .header_area .navbar .primary_btn {
+  .header_area .navbar {
     margin-left: 40px; }
 
   .home_banner_area .banner_inner .banner_content h2 br {
