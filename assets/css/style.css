@@ -742,7 +742,7 @@ body{
 }
 
 .button::before {
-  content: "Download CV";
+  content: "View Resume";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -758,7 +758,7 @@ body{
 }
 
 .button::after {
-  content: "HEllo";
+  content: "Resume";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2576,19 +2576,10 @@ main::before {
   90% { transform:translate(-10%, 10%); }
 }
 
-a {
-	text-decoration: none;
-	color: white;
-	outline: none;
-}
 
-a:hover,
-a:focus {
-	color: rgb(173, 173, 173);
-	outline: none;
-  -webkit-text-stroke: 1.5px #b4b4b4;
-	text-stroke: 1.5px #c2c2c2;
-}
+
+
+
 
 .frame {
 	padding: 3rem 5vw;
@@ -2728,10 +2719,10 @@ a:focus {
 .menu__item-link,
 .marquee span {
 	white-space: nowrap;
-	font-size: 70px;
-	padding: 0 10px;
+	font-size: 4rem;
+	
 	font-weight: 900;
-	line-height: 1.15;
+	line-height: 2.15;
   color: #c2c2c2;
   font-family: "PP Editorial New Italic";
 }
