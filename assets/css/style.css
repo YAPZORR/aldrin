@@ -1838,9 +1838,9 @@ details[open] summary:after {
 
 /* Set custom height for the modal */
 
-
-
-
+.modal{
+  z-index: ;
+}
 .modal-header1{
   background-color: #1f1f1f ;
 }
