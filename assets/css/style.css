@@ -1838,6 +1838,12 @@ details[open] summary:after {
 
 /* Set custom height for the modal */
 
+
+
+
+
+
+
 .modal{
   z-index: ;
 }
@@ -2619,7 +2625,7 @@ main::before {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	padding: 10% 10%;
+	padding: 10% 5%;
 	--marquee-width: 100vw;
 	--offset: 20vw;
 	--move-initial: calc(-25% + var(--offset));
@@ -2775,6 +2781,61 @@ main::before {
 	.frame a {
 		pointer-events: auto;
 	}
+}
+
+/* Main container */
+main {
+  padding: 2rem 1rem; /* Adjusted padding for smaller screens */
+}
+
+/* Menu */
+.menu {
+  padding: 0; /* Removed padding */
+  display: flex;
+  flex-direction: column; /* Display items vertically on smaller screens */
+}
+
+.menu__item {
+  position: relative;
+  margin-bottom: 20px; /* Reduced margin for better spacing on smaller screens */
+}
+
+.menu__item-link {
+  display: inline-block;
+  position: relative;
+  color: #cccccc;
+  font-family: "Lobster", sans-serif;
+}
+
+.menu__item-img {
+  display: block; /* Changed display to block for better responsiveness */
+  max-width: 100%; /* Ensures images don't overflow on smaller screens */
+  height: auto;
+  margin-top: 10px; /* Adjusted margin for better spacing */
+}
+
+/* Marquee */
+.marquee {
+  display: none; /* Hide marquee on smaller screens */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .menu {
+      align-items: center; /* Center items vertically */
+  }
+
+  .menu__item {
+      text-align: center; /* Center text */
+  }
+
+  .menu__item-link {
+      margin-bottom: 10px; /* Reduced margin */
+  }
+
+  .menu__item-img {
+      margin-top: 0; /* Removed margin */
+  }
 }
 
 
