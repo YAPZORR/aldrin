@@ -2619,7 +2619,7 @@ main::before {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	padding: 20vh 0;
+	padding: 10% 10%;
 	--marquee-width: 100vw;
 	--offset: 20vw;
 	--move-initial: calc(-25% + var(--offset));
@@ -2631,7 +2631,7 @@ main::before {
 .menu__item {
 	cursor: default;
 	position: relative;
-	padding: 0 15vw;
+	
   margin-bottom: 40px;
 }
 
