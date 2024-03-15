@@ -2719,7 +2719,7 @@ main::before {
 .menu__item-link,
 .marquee span {
 	white-space: nowrap;
-	font-size: 4rem;
+	font-size: 40px;
 	
 	font-weight: 900;
 	line-height: 2.15;
