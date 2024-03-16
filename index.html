@@ -22,6 +22,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="./assets/css/bootstrap-side-modals" />
 
   <!-- 
@@ -1849,8 +1850,8 @@ for our users.
               </p>
             </details>
           </div>
-          <button class="button more-about"></button>
-
+          <button class="button more-about" id="openModalBtn"></button>
+          
           <div class=""></div>
          
           
@@ -1918,6 +1919,43 @@ for our users.
       </main>
       
     </div>
+
+    <div class="quantum-entanglement">
+      <div class="quantum-entanglement-content">
+          <span class="galactic-close">&times;</span>
+           <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro target-section">
+
+      <div class="row intro-content">
+
+          <div class="column large-9 mob-full intro-text">
+              <h3 class="intro-name1">Hello, I'm Aldrin Eyana</h3>
+              <h1 class="intro-name">
+                  Digital <br>
+                  and Product Designer <br>
+                  Based In Philippines.
+              </h1>
+          </div>
+
+          <div class="intro-scroll">
+            <a href="#about" class="intro-scroll-link smoothscroll">
+                Scroll For More
+            </a>
+        </div>
+
+         
+          
+          
+          <div class="intro-pic"></div>
+
+          
+
+      </div> <!-- end row -->
+      
+  </section> <!-- end intro -->
+      </div>
+  </div>
    
  <!-- 
     - #FOOTER
@@ -2058,6 +2096,13 @@ for our users.
 
 
 
+document.getElementById('openModalBtn').addEventListener('click', function() {
+    document.querySelector('.quantum-entanglement').style.display = 'block';
+});
+
+document.querySelector('.galactic-close').addEventListener('click', function() {
+    document.querySelector('.quantum-entanglement').style.display = 'none';
+});
 
   </script>
 </body>
