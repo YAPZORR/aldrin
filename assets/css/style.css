@@ -2727,7 +2727,7 @@ main::before {
 	white-space: nowrap;
 	font-size: 35px;
 	
-	font-weight: 900;
+	font-weight: 200;
 	line-height: 2.15;
   color: #c2c2c2;
   font-family: "PP Editorial New Italic";
@@ -2851,5 +2851,256 @@ background-color: #111111;
 
 
  
+/* modal- about */
+.quantum-entanglement {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  z-index: 9999;
+  overflow: hidden;
+  
+}
 
- 
+.quantum-entanglement-content {
+  animation: slide-up 0.5s ease-out forwards;
+  background-color: #1f1f1f;
+
+
+backdrop-filter: blur(25px);
+  margin: % auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: auto;
+  
+}
+
+@keyframes slide-up {
+  from {
+      transform: translateY(100%);
+  }
+  to {
+      transform: translateY(0);
+  }
+}
+
+.galactic-close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 999;
+}
+
+.galactic-close:hover,
+.galactic-close:focus {
+  color: rgb(241, 241, 241);
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+
+/* modal- about  content*/
+
+/* ===================================================================
+ * # intro 
+ *
+ * ------------------------------------------------------------------- */
+ .s-intro {
+  width: 100%;
+  max-width: 90%;
+  min-height: 792px;
+  
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative; /* Change from absolute to relative */
+}
+
+.intro-content {
+  height: 100%;
+  max-width: 1140px;
+  padding-top: 20vh;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.intro-pic {
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url("https://i.postimg.cc/7P9TcXch/431025221-369945252671207-8718227921447615953-n-1.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+.intro-pic::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: .2;
+}
+
+
+.intro-name{
+  font-family: "Alata", sans-serif;
+  
+}
+.intro-name1{
+  font-family: "Alata", sans-serif;
+}
+.intro-text {
+  -webkit-transform: translate3d(0, -3.6rem, 0);
+  transform: translate3d(0, -3.6rem, 0);
+  position: static;
+  z-index: 1;
+}
+
+.intro-text h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.4rem;
+  font-weight: 500;
+  line-height: 1.333;
+  color: #919191;
+  margin-top: 0;
+}
+
+.intro-text h1 {
+  font-size: 7.8rem;
+  font-weight: 500;
+  line-height: 1.179;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.intro-scroll {
+  font-family: "Roboto", sans-serif;
+  
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  position: absolute;
+  bottom: .1rem;
+  left: 24px;
+  z-index: 1;
+}
+
+.intro-scroll a {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  padding-right: 8.8rem;
+  
+}
+
+.intro-scroll a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 1px;
+  width: 72px;
+  background-color: #cf1767;
+}
+.intro-scroll-link:hover{ 
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+
+
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * intro
+ * ------------------------------------------------------------------- */
+@media screen and (max-width:1400px) {
+  .intro-text h3 {
+    font-size: 2.2rem;
+  }
+
+  .intro-text h1 {
+    font-size: 7.2rem;
+  }
+
+}
+
+@media screen and (max-width:1200px) {
+  .intro-content {
+    max-width: 1000px;
+  }
+
+  .intro-text h3 {
+    font-size: 2rem;
+  }
+
+  .intro-text h1 {
+    font-size: 7rem;
+  }
+
+}
+
+@media screen and (max-width:1024px) {
+  .s-intro {
+    max-height: 800px;
+  }
+
+  .intro-text h1 {
+    font-size: 6.2rem;
+  }
+
+}
+
+@media screen and (max-width:900px) {
+  .intro-text h1 {
+    font-size: 6rem;
+  }
+
+  .intro-text br {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width:800px) {
+  .intro-content {
+    width: 88%;
+    padding-top: 8rem;
+  }
+
+  .intro-pic {
+    top: 12%;
+    left: 40%;
+  }
+
+  .intro-pic::before {
+    opacity: .4;
+  }
+
+  .intro-grid {
+    top: 20%;
+    opacity: .1;
+  }
+
+}
