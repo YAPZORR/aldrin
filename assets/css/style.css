@@ -3403,3 +3403,9 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
  
 }
+/* Add mobile responsive styles */
+@media screen and (max-width: 480px) {
+  .more-about {
+    display: none;
+  }
+}
