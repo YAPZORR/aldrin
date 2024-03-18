@@ -2598,6 +2598,32 @@ ul.slides input {
 }
 
 
+/* You can customize each dot individually by their IDs */
+#img-dot-31 {
+  background-image: url('https://i.postimg.cc/s2wF466b/Group-20-Copy.png'); /* Replace 'dot-7-image.jpg' with your image path */
+}
+
+#img-dot-32 {
+  background-image: url('https://i.postimg.cc/NGyMLmLQ/Group-21.png"'); /* Replace 'dot-8-image.jpg' with your image path */
+}
+
+#img-dot-33 {
+  background-image: url('https://i.postimg.cc/MHfhxW68/Group-18-1-Copy.png'); /* Replace 'dot-9-image.jpg' with your image path */
+}
+
+#img-dot-34 {
+  background-image: url('https://i.postimg.cc/8552KRxc/Group-14-1.png'); /* Replace 'dot-10-image.jpg' with your image path */
+}
+
+#img-dot-35 {
+  background-image: url('https://i.postimg.cc/mD500cGw/Group-11-1-Copy.png'); /* Replace 'dot-11-image.jpg' with your image path */
+}
+
+#img-dot-36 {
+  background-image: url('https://i.postimg.cc/zGwYVXnz/f3-1.png'); /* Replace 'dot-12-image.jpg' with your image path */
+}
+
+
 input:checked + .slide-container .slide-image {
   opacity: 1;
   transform: scale(1);
@@ -2654,7 +2680,14 @@ input#img-30:checked ~ .carousel-dots label#img-dot-30 {
 opacity: 1;
 }
 
-
+input#img-31:checked ~ .carousel-dots label#img-dot-31,
+input#img-32:checked ~ .carousel-dots label#img-dot-32,
+input#img-33:checked ~ .carousel-dots label#img-dot-33,
+input#img-34:checked ~ .carousel-dots label#img-dot-34,
+input#img-35:checked ~ .carousel-dots label#img-dot-35,
+input#img-36:checked ~ .carousel-dots label#img-dot-36 {
+opacity: 1;
+}
 
 
 
