@@ -2546,6 +2546,57 @@ ul.slides input {
   background-image: url('https://i.postimg.cc/zGwYVXnz/f3-1.png'); /* Replace 'dot-12-image.jpg' with your image path */
 }
 
+/* You can customize each dot individually by their IDs */
+#img-dot-19 {
+  background-image: url('https://i.postimg.cc/s2wF466b/Group-20-Copy.png'); /* Replace 'dot-7-image.jpg' with your image path */
+}
+
+#img-dot-20 {
+  background-image: url('https://i.postimg.cc/NGyMLmLQ/Group-21.png"'); /* Replace 'dot-8-image.jpg' with your image path */
+}
+
+#img-dot-21 {
+  background-image: url('https://i.postimg.cc/MHfhxW68/Group-18-1-Copy.png'); /* Replace 'dot-9-image.jpg' with your image path */
+}
+
+#img-dot-22 {
+  background-image: url('https://i.postimg.cc/8552KRxc/Group-14-1.png'); /* Replace 'dot-10-image.jpg' with your image path */
+}
+
+#img-dot-23 {
+  background-image: url('https://i.postimg.cc/mD500cGw/Group-11-1-Copy.png'); /* Replace 'dot-11-image.jpg' with your image path */
+}
+
+#img-dot-24 {
+  background-image: url('https://i.postimg.cc/zGwYVXnz/f3-1.png'); /* Replace 'dot-12-image.jpg' with your image path */
+}
+
+
+/* You can customize each dot individually by their IDs */
+#img-dot-25 {
+  background-image: url('https://i.postimg.cc/s2wF466b/Group-20-Copy.png'); /* Replace 'dot-7-image.jpg' with your image path */
+}
+
+#img-dot-26 {
+  background-image: url('https://i.postimg.cc/NGyMLmLQ/Group-21.png"'); /* Replace 'dot-8-image.jpg' with your image path */
+}
+
+#img-dot-27 {
+  background-image: url('https://i.postimg.cc/MHfhxW68/Group-18-1-Copy.png'); /* Replace 'dot-9-image.jpg' with your image path */
+}
+
+#img-dot-28 {
+  background-image: url('https://i.postimg.cc/8552KRxc/Group-14-1.png'); /* Replace 'dot-10-image.jpg' with your image path */
+}
+
+#img-dot-29 {
+  background-image: url('https://i.postimg.cc/mD500cGw/Group-11-1-Copy.png'); /* Replace 'dot-11-image.jpg' with your image path */
+}
+
+#img-dot-30 {
+  background-image: url('https://i.postimg.cc/zGwYVXnz/f3-1.png'); /* Replace 'dot-12-image.jpg' with your image path */
+}
+
 
 input:checked + .slide-container .slide-image {
   opacity: 1;
@@ -2582,6 +2633,24 @@ input#img-15:checked ~ .carousel-dots label#img-dot-15,
 input#img-16:checked ~ .carousel-dots label#img-dot-16,
 input#img-17:checked ~ .carousel-dots label#img-dot-17,
 input#img-18:checked ~ .carousel-dots label#img-dot-18 {
+opacity: 1;
+}
+
+input#img-19:checked ~ .carousel-dots label#img-dot-19,
+input#img-20:checked ~ .carousel-dots label#img-dot-20,
+input#img-21:checked ~ .carousel-dots label#img-dot-21,
+input#img-22:checked ~ .carousel-dots label#img-dot-22,
+input#img-23:checked ~ .carousel-dots label#img-dot-23,
+input#img-24:checked ~ .carousel-dots label#img-dot-24 {
+opacity: 1;
+}
+
+input#img-25:checked ~ .carousel-dots label#img-dot-25,
+input#img-26:checked ~ .carousel-dots label#img-dot-26,
+input#img-27:checked ~ .carousel-dots label#img-dot-27,
+input#img-28:checked ~ .carousel-dots label#img-dot-28,
+input#img-29:checked ~ .carousel-dots label#img-dot-29,
+input#img-30:checked ~ .carousel-dots label#img-dot-30 {
 opacity: 1;
 }
 
@@ -3403,6 +3472,17 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
  
 }
+
+/* Add mobile responsive styles */
+@media screen and (max-width: 768px) {
+  .more-about {
+    display: none;
+    
+  }
+
+ 
+}
+
 /* Add mobile responsive styles */
 @media screen and (max-width: 480px) {
   .more-about {
