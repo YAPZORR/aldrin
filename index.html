@@ -47,6 +47,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Pacifico&display=swap"
          rel="stylesheet" />
       <script src="assets/js/script.js"></script>
+      <noscript><a href="https://www.livechat.com/chat-with/19408054/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
        <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/45563141.js"></script> -->
 
  <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
@@ -57,8 +58,8 @@
 
       <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
 <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
-<!-- <script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-5421ab7e-398c-4750-b735-8c08f9866ad2" data-elfsight-app-lazy></div> -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<!-- <div class="elfsight-app-5421ab7e-398c-4750-b735-8c08f9866ad2" data-elfsight-app-lazy></div> -->
    <body>
       <!-- Start of HubSpot Embed Code -->
       <!-- End of HubSpot Embed Code -->
@@ -149,6 +150,9 @@
 
       
       <!-- Project Section -->
+
+
+      
       <section class="project-section service has-shape" id="services" aria-label="service">
          <div class="album">
             <div class="responsive-container-block bg">
@@ -3857,17 +3861,28 @@
                   <div class=""></div>
                </div>
             </div>
+
+            
+
+     
             <div class="container-video">
+               
+<!--                
                <div class="video-wrapper">
                   <img src="https://s7.gifyu.com/images/SJ7Ft.gif" alt="Video Thumbnail"
                      class="video-thumbnail" />
-               </div>
+               </div> -->
             </div>
+
+           
+
 
 
             
             <br><br>
             <br><br><br><br>
+
+            
             <main>
                <nav class="menu ">
                   <div class="menu__item">
@@ -4096,6 +4111,22 @@
          </div>
          <!-- End of .container -->
       </section>
+       <!-- <section class="g3d-section">
+	<h1 class="g3d-title">GALLERY 3D</h1>
+
+	<div class="g3d-wrapper" style="--count: 10; --duration: 16s;">
+		<img class="g3d-img" src="https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg" style="--i: 1;">
+		<img class="g3d-img" src="https://images.unsplash.com/photo-1505238680356-667803448bb6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" style="--i: 2;">
+		<img class="g3d-img" src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg" style="--i: 3;">
+		<img class="g3d-img" src="https://images.pexels.com/photos/6424587/pexels-photo-6424587.jpeg" style="--i: 4;">
+		<img class="g3d-img" src="https://images.pexels.com/photos/29445973/pexels-photo-29445973.jpeg" style="--i: 5;">
+		<img class="g3d-img" src="https://images.pexels.com/photos/10725897/pexels-photo-10725897.jpeg" style="--i: 6;">
+		<img class="g3d-img" src="https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg" style="--i: 7;">
+		<img class="g3d-img" src="https://images.pexels.com/photos/34600/pexels-photo.jpg" style="--i: 8;">
+		<img class="g3d-img" src="https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg" style="--i: 9;">
+		<img class="g3d-img" src="https://images.pexels.com/photos/6424589/pexels-photo-6424589.jpeg" style="--i: 10;">
+	</div>
+</section> -->
       <!-- 
          - custom js link
          -->
@@ -4259,6 +4290,28 @@
 
     // Call reloadPage function every 1 minute (60000 milliseconds)
     setInterval(reloadPage, 300000);
+    
+    window.__lc = window.__lc || {};
+    window.__lc.license = 19408054;
+    window.__lc.integration_name = "manual_onboarding";
+    window.__lc.product_name = "livechat";
+    ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+
+// gallery 3d
+document.addEventListener('DOMContentLoaded', () => {
+	const images = document.querySelectorAll('.g3d-img');
+
+	images.forEach(image => {
+		const maxLeft = window.innerWidth * 0.5 / 16;
+		const left = -Math.random() * maxLeft + 'rem';
+		const maxRight = window.innerWidth * 0.5 / 16;
+		const right = -Math.random() * maxRight + 'rem';
+
+		image.style.setProperty('--left', left);
+		image.style.setProperty('--right', right);
+	});
+});
+
       </script>
    </body>
 </html>
